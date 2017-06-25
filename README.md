@@ -2,3 +2,4 @@
 
 ### language
 - python
+- scala
