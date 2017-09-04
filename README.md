@@ -1,5 +1,12 @@
-## programming :)
+programming :)
+==============================
 
-### language
-- python
-- scala
+language
+------------------------------
+* Python
+* Scala
+* Node.js
+
+Framework
+------------------------------
+* Vue.js
