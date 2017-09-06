@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Hello Vue.js</title>
+</head>
+
+<body>
+    <div id="myapp">
+        <lesson-component></lesson-component>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+    <script>
+        Vue.component('lesson-component', {
+            template: '<h1>lesson Vue.js component</h1>'
+        })
+        new Vue ({
+            el: '#myapp'
+        })
+    </script>
+</body>
+</html>
