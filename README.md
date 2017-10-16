@@ -1,12 +1,12 @@
 programming :)
 ==============================
 
-language
+Language
 ------------------------------
+* Node.js
 * Python
 * Perl
 * Scala
-* Node.js
 
 Framework
 ------------------------------
