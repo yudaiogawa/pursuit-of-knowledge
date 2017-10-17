@@ -7,6 +7,7 @@ Language
 * Python
 * Perl
 * Scala
+* TypeScript
 
 Framework
 ------------------------------
