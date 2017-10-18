@@ -3,6 +3,7 @@ programming :)
 
 Language
 ------------------------------
+* Java
 * Node.js
 * Python
 * Perl
