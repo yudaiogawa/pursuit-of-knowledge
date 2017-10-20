@@ -3,7 +3,7 @@ class Ikezaki {
   String msg;
 
   Ikezaki(String text) {
-    this.msg = "疾風怒濤の" + text;
+    this.msg = "超絶怒涛の" + text;
   }
 
   void sayYeah() {
