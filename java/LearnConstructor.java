@@ -1,13 +1,20 @@
 class Ikezaki {
 
-  String msg;
+  String intro;
+  String verse;
+
+  Ikezaki() {
+    this.intro = "空前絶後の";
+    System.out.println(intro);
+  }
 
   Ikezaki(String text) {
-    this.msg = "超絶怒涛の" + text;
+    this();
+    this.verse = "超絶怒涛の" + text;
   }
 
   void sayYeah() {
-    System.out.println(this.msg);
+    System.out.println(this.verse);
   }
 
 }
