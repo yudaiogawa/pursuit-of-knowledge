@@ -1,12 +1,12 @@
-class User {
+class Harry {
 
   void sayHello() {
-    System.out.println("Hello ;)");
+    System.out.println("Hello. my name is Harry ;)");
   }
 
 }
 
-class AdminUser extends User {
+class Yudai extends Harry {
 
   @Override
   void sayHello() {
@@ -18,9 +18,11 @@ class AdminUser extends User {
 public class Lesson {
 
   public static void main(String[] args) {
-    User harry = new User();
+    Harry harry = new Harry();
     harry.sayHello();
-    AdminUser yudai = new AdminUser();
+
+    Yudai yudai = new Yudai();
     yudai.sayHello();
   }
+
 }
