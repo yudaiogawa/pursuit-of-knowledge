@@ -8,6 +8,10 @@ class Harry {
 
 class Yudai extends Harry {
 
+  Yudai() {
+    System.out.println("私の名前は、ゆうだいです。");
+  }
+
   @Override
   void sayHello() {
     System.out.println("こんにちは ;)");
