@@ -19,7 +19,7 @@ class Yudai extends Harry {
 
 }
 
-public class Lesson {
+public class ExtendsAndOverride {
 
   public static void main(String[] args) {
     Harry harry = new Harry();
