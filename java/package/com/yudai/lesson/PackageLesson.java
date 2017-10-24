@@ -1,6 +1,7 @@
-package com.yudai.www;
-import com.yudai.www.family.Parent;
-import com.yudai.www.family.Child;
+package com.yudai.lesson;
+
+import com.yudai.lesson.family.Parent;
+import com.yudai.lesson.family.Child;
 
 public class PackageLesson {
 

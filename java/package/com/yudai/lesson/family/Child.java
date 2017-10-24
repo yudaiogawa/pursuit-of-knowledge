@@ -1,4 +1,4 @@
-package com.yudai.www.family;
+package com.yudai.lesson.family;
 
 public class Child extends Parent {
 
