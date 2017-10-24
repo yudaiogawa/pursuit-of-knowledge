@@ -1,16 +1,18 @@
 package com.yudai.lesson;
 
-import com.yudai.lesson.family.Parent;
-import com.yudai.lesson.family.Child;
+// import com.yudai.lesson.*;
+
+import com.yudai.lesson.greeting.Japanese;
+import com.yudai.lesson.greeting.English;
 
 public class PackageLesson {
 
   public static void main(String[] args) {
-    Parent parent = new Parent("yudai");
-    parent.sayName();
+    English english = new English("Hello");
+    english.sayHello();
 
-    Child child = new Child();
-    child.sayName();
+    Japanese japanese = new Japanese("こんにちは");
+    japanese.sayHello();
   }
 
 }
