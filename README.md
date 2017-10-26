@@ -1,7 +1,7 @@
-programming :)
+Computer :)
 ==============================
 
-Language
+Programming Language
 ------------------------------
 * Java
 * Node.js
@@ -9,7 +9,12 @@ Language
 * Perl
 * Scala
 * TypeScript
+* UnixCommand
 
 Framework
 ------------------------------
 * Vue.js
+
+Infrastructure Technologies
+------------------------------
+* Vagrant
