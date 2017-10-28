@@ -17,7 +17,7 @@ public class ReferenceType {
     String x_msg = "lesson";
     String y_msg = x_msg;
 
-    y_msg = "Java"; // String型は基本的に変更不可 - 別領域にデータを保持
+    y_msg = "Java"; // String型は基本的に変更不可 -> 別領域にデータを保持
 
     System.out.println(x_msg);
     System.out.println(y_msg);
