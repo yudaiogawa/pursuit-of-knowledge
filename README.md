@@ -1,20 +1,25 @@
 Computer :)
-==============================
+===
 
 Programming Language
-------------------------------
+---
 * Java
 * Node.js
 * Python
 * Perl
 * Scala
+* Scala.js
 * TypeScript
 * UnixCommand
 
 Framework
-------------------------------
+---
 * Vue.js
 
-Infrastructure Technologies
-------------------------------
+Infrastructure Technology
+---
 * Vagrant
+
+Version Control System
+---
+* Git
