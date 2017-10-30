@@ -1,8 +1,8 @@
 Computer :)
-===
+========
 
 Programming Language
----
+--------
 * Java
 * Node.js
 * Python
@@ -13,13 +13,13 @@ Programming Language
 * UnixCommand
 
 Framework
----
+--------
 * Vue.js
 
 Infrastructure Technology
----
+--------
 * Vagrant
 
 Version Control System
----
+--------
 * Git

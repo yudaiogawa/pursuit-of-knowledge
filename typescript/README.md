@@ -1,14 +1,16 @@
 typescript :)
----
+========
 
-### Environment
+Environment
+--------
 
 ```zsh
 % tsc -v
 Version 2.5.3
 ```
 
-### How to run
+How to run
+--------
 
 1. Compiles to plain JavaScript
 

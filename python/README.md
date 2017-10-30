@@ -1,6 +1,8 @@
-## python :)
+python :)
+========
 
-### environment
+environment
+--------
 * python2
 * python3
 * Anaconda3
