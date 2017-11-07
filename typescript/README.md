@@ -15,11 +15,11 @@ How to run
 1. Compiles to plain JavaScript
 
     ```zsh
-    % tsc hoge.ts
+    % tsc foo.ts
     ```
 
 1. Run
 
     ```zsh
-    % node hoge.js
+    % node foo.js
     ```
