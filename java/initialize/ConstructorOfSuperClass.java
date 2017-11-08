@@ -22,7 +22,7 @@ class Sub extends Super {
 
 }
 
-class SuperClassConstructor {
+class ConstructorOfSuperClass {
 
   public static void main(String[] args) {
     Sub sub = new Sub();
