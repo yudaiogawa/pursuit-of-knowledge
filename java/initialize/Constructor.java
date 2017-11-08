@@ -19,7 +19,7 @@ class Ikezaki {
 
 }
 
-public class LearnConstructor {
+public class Constructor {
 
   public static void main(String[] args) {
     Ikezaki ikezaki = new Ikezaki("コンストラクタ");
