@@ -14,12 +14,12 @@ How to run
 
 1. Compiles to plain JavaScript
 
-    ```zsh
-    % tsc foo.ts
-    ```
+  ```zsh
+  % tsc foo.ts
+  ```
 
 1. Run
 
-    ```zsh
-    % node foo.js
-    ```
+  ```zsh
+  % node foo.js
+  ```
