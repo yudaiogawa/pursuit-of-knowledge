@@ -1,29 +1,34 @@
 Computer :)
 ========
 
+Operating System
+--------
+- Unix
+  * Commands
+
 Programming Language
 --------
-* Java
-* Node.js
-* Python
-* Perl
-* Scala
-* Scala.js
-* TypeScript
-* UnixCommand
+- Java
+- Node.js
+- Python
+- Perl
+- Scala
+- Scala.js
+- TypeScript
 
 Framework
 --------
-* Vue.js
+- Vue.js
 
 Infrastructure Technology
 --------
-* Vagrant
+- Vagrant
 
 Version Control System
 --------
-* Git
+- Git
+  * Commands
 
 Developer's tool
 --------
-* [Xcode](apple_developer/xcode)
+- [Xcode](apple_developer/xcode)
