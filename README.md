@@ -26,4 +26,4 @@ Version Control System
 
 Developer's tool
 --------
-* [Xcode](apple_developer)
+* [Xcode](apple_developer/xcode)
