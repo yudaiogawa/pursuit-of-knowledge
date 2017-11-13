@@ -14,7 +14,7 @@ Programming Language
 - [Perl](perl)
 - [Scala](scala)
 - [Scala.js](scalajs)
-- [TypeScript](typeScript)
+- [TypeScript](typescript)
 
 Framework
 --------
