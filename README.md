@@ -3,32 +3,32 @@ Computer :)
 
 Operating System
 --------
-- Unix
-  * Commands
+- [Unix](unix)
+  * [Commands](unix/commands.sh)
 
 Programming Language
 --------
-- Java
-- Node.js
-- Python
-- Perl
-- Scala
-- Scala.js
-- TypeScript
+- [Java](java)
+- [Node.js](nodejs)
+- [Python](python)
+- [Perl](perl)
+- [Scala](scala)
+- [Scala.js](scalajs)
+- [TypeScript](TypeScript)
 
 Framework
 --------
-- Vue.js
+- [Vue.js](vuejs)
 
 Infrastructure Technology
 --------
-- Vagrant
+- [Vagrant](infrastructure/vagrants)
 
 Version Control System
 --------
-- Git
-  * Commands
+- [Git](git)
+  * [Commands](git/commands.sh)
 
-Developer's tool
+Developer's Tool
 --------
 - [Xcode](apple_developer/xcode)
