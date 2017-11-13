@@ -29,8 +29,7 @@ Version Control System
 - [Git](git)
   * [Commands](git/commands.sh)
 
-Developer's Tool
+[Apple Developer](apple_developer)
 --------
-- [Apple Developer](apple_developer)
-  * [Xcode](apple_developer/xcode)
-  * [Commands](apple_developer/commands.sh)
+- [Xcode](apple_developer/xcode)
+- [Commands](apple_developer/commands.sh)
