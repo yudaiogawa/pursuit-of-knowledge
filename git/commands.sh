@@ -18,3 +18,9 @@ git filter-branch -f --env-filter "GIT_AUTHOR_NAME='username'; GIT_AUTHOR_EMAIL=
 
 # 特定のコミットだけを取り込めちゃう
 git cherry-pick SHA
+
+#### rebase ################################################################
+
+# 指定コミットにリベースできる
+# コミットメッセージ変更、コミットをまとめたりできる
+git rebase -i SHA
