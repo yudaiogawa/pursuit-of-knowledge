@@ -4,14 +4,11 @@
 [nvie/gitflow](https://github.com/nvie/gitflow)
 
 ## Branch model
-- master
 - develop
 - feature
 - release
+- master
 - hotfix
-
-### master
-- 本番リリースブランチ
 
 ### develop
 - 開発主軸ブランチ
@@ -21,6 +18,9 @@
 
 ### release
 - リリース準備ブランチ
+
+### master
+- 本番リリースブランチ
 
 ### hotfix
 - リリース後のバグ緊急対応ブランチ
