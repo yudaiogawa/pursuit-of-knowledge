@@ -15,18 +15,25 @@
 ### develop
 
 ### feature
-- developから分岐
-    ```zsh
-    % git flow feature start foo
-    ```
-- 作業終了したらdevelopにmergeされる
-    ```zsh
-    % git flow feature finish foo
-    ```
-- リモートに反映
-    ```zsh
-    % git flow feature publish foo
-    ```
+#### 新機能の開発スタート
+```zsh
+% git flow feature start foo
+```
+- 勝手にdevelopからcheckoutしてfeatureブランチを作ってくれる。
+- 上記コマンドで `feature/foo` というブランチが作成される。
+
+#### 新機能の開発フィニッシュ
+```zsh
+% git flow feature finish foo
+```
+- 上記コマンドで勝手にdevelopにmergeしてくれて、featureブランチを削除してくれる。
+
+#### remoteへの反映
+```zsh
+% git flow feature publish foo
+```
+- featureブランチをリモートに反映。
+- 同じ機能を複数人で開発する際は必要だと思う。
 
 ### release
 
