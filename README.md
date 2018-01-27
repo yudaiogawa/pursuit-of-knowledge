@@ -1,13 +1,10 @@
-Computer :)
-========
+# Computer :)
 
-Operating System
---------
+## Operating System
 - [Unix](unix)
   * [Commands](unix/commands.sh)
 
-Programming Language
---------
+## Programming Language
 - [Java](java)
 - [Node.js](nodejs)
 - [Python](python)
@@ -16,21 +13,17 @@ Programming Language
 - [Scala.js](scalajs)
 - [TypeScript](typescript)
 
-Framework
---------
+## Framework
 - [Vue.js](vuejs)
 
-Infrastructure Technology
---------
+## Infrastructure Technology
 - [Vagrant](infrastructure/vagrants)
 
-Version Control System
---------
+## Version Control System
 - [Git](git)
   * [Commands](git/commands.sh)
   * [GitFlow](git/gitflow.md)
 
-[Apple Developer](apple-developer)
---------
+## [Apple Developer](apple-developer)
 - [Xcode](apple-developer/xcode)
 - [Commands](apple-developer/commands.sh)
