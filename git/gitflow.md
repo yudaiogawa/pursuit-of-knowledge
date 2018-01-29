@@ -40,3 +40,9 @@
 ### master
 
 ### hotfix
+##### バグ修正スタート
+```zsh
+% git flow hotfix start foo
+```
+- masterからcheckoutされる。
+- 上記コマンドで `hotfix/foo` というブランチが作成される。
