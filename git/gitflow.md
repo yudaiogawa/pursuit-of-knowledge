@@ -1,8 +1,5 @@
 # Gitflow
 
-## Reference
-[nvie/gitflow](https://github.com/nvie/gitflow)
-
 ## Branch model
 | Branch|Interpretation|
 |:-----:|:------------:|
@@ -13,36 +10,49 @@
 | hotfix|  バグ緊急対応|
 
 ### develop
+- 開発主軸ブランチ
 
 ### feature
-#### 新機能の開発スタート
+- 新機能の開発を行う為のブランチ
+
+#### 作業開始
 ```zsh
 % git flow feature start foo
 ```
-- 勝手にdevelopからcheckoutしてfeatureブランチを作ってくれる。
-- 上記コマンドで `feature/foo` というブランチが作成される。
+1. developからcheckoutしてfeatureブランチを作ってくれます。
+1. `feature/foo` というブランチが作成されます。
 
-#### 新機能の開発フィニッシュ
+#### 作業終了
 ```zsh
 % git flow feature finish foo
 ```
-- 上記コマンドで勝手にdevelopにmergeしてくれて、featureブランチを削除してくれる。
+1. developにmergeされます。
+1. `feature/foo` ブランチが削除されます。
 
-#### remoteへの反映
+#### Remoteへの反映
 ```zsh
 % git flow feature publish foo
 ```
-- featureブランチをリモートに反映。
-- 同じ機能を複数人で開発する際は必要だと思う。
+- `feature/foo` をリモートに反映。
 
 ### release
 
 ### master
 
 ### hotfix
-##### バグ修正スタート
+- リリース後の緊急の修正作業などを行う為のブランチ
+
+#### 作業開始
 ```zsh
 % git flow hotfix start foo
 ```
-- masterからcheckoutされる。
-- 上記コマンドで `hotfix/foo` というブランチが作成される。
+1. masterからcheckoutされます。
+1. `hotfix/foo` ブランチが作成されます。
+
+#### 作業終了
+```zsh
+% git flow hotfix finish foo
+```
+1. masterにmergeされ、masterにリリースタグが打たれます。上記コマンドの場合は、fooというタグが打たれます。
+1. masterがdevelopにmergeされます。
+1. `hotfix/foo` が削除されます。
