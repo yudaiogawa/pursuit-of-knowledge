@@ -1,5 +1,7 @@
 # Gitflow
 
+A successful Git branching model.
+
 ## Branch model
 | Branch|Interpretation|
 |:-----:|:------------:|
@@ -9,27 +11,39 @@
 | master|      リリース|
 | hotfix|  バグ緊急対応|
 
+## The main branches
+- master
+- develop
+
+## Supporting branches
+- feature
+- release
+- hotfix
+
+## About branches
+
 ### develop
 - 開発主軸ブランチ
 
 ### feature
-- 新機能の開発を行う為のブランチ
+- 新機能の開発を行う為のブランチ。
+- `Topic branch` とも呼ばれるらしい。
 
-#### 作業開始
+##### 作業開始
 ```zsh
 % git flow feature start foo
 ```
 1. developからcheckoutしてfeatureブランチを作ってくれます。
 1. `feature/foo` というブランチが作成されます。
 
-#### 作業終了
+##### 作業終了
 ```zsh
 % git flow feature finish foo
 ```
 1. developにmergeされます。
 1. `feature/foo` ブランチが削除されます。
 
-#### Remoteへの反映
+##### Remoteへの反映
 ```zsh
 % git flow feature publish foo
 ```
@@ -42,14 +56,14 @@
 ### hotfix
 - リリース後の緊急の修正作業などを行う為のブランチ
 
-#### 作業開始
+##### 作業開始
 ```zsh
 % git flow hotfix start foo
 ```
 1. masterからcheckoutされます。
 1. `hotfix/foo` ブランチが作成されます。
 
-#### 作業終了
+##### 作業終了
 ```zsh
 % git flow hotfix finish foo
 ```
