@@ -22,7 +22,7 @@
 ## Version Control System
 - [Git](git)
   * [Commands](git/commands.sh)
-  * [GitFlow](git/gitflow.md)
+  * [GitFlow](git/gitflow)
 
 ## [Apple Developer](apple-developer)
 - [Xcode](apple-developer/xcode)
