@@ -24,6 +24,9 @@
 ### develop
 
 ### feature
+- `develop` から分岐し `develop` にマージする
+- 新機能を開発するためのブランチ
+- 別名 `Topic branch`
 
 ### release
 
