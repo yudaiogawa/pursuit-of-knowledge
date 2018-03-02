@@ -1,17 +1,14 @@
-scala :)
-========
+# Scala :)
 
-introduction
---------
+## Introduction
 
 ```zsh
-$ brew install scala
+% brew install scala
 ```
 
-environment
---------
+## Environment
 
 ```zsh
-$ scala -version
+% scala -version
 Scala code runner version 2.12.2 -- Copyright 2002-2017, LAMP/EPFL and Lightbend, Inc.
 ```
