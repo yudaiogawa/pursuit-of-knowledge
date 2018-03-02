@@ -1,19 +1,18 @@
-socket.io
-========
+# socket.io
 
 [Official Site](https://socket.io/)
 
-Overview
---------
+## Overview
 
 - [WebSocket](websocket.md)というWeb技術を便利に使うためのNode.jsパッケージ
 
-Library
---------
+## Library
 
-###### room
+__room__
+
 チャットルームを作って、そのチャットルームにいるクライアント間だけでデータをやりとりしたい時などに使える。
 
-###### namespace
+__namespace__
+
 機能を拡張したい時や、API連携機能など追加したい時に使える。
 名前空間で区切って処理が書けるため、すっきりとしたプログラムを実現できる。

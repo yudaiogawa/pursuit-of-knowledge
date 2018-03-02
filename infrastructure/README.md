@@ -1,2 +1,1 @@
-Immutable infrastructure as code
-========
+# Immutable infrastructure as code
