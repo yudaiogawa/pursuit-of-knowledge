@@ -4,14 +4,14 @@
 
 ## Branch model
 
-| Branch  | Interpretation   |
-|:-------:|:----------------:|
-| develop | 開発メイン        |
-| feature | 新機能開発        |
-| release | リリース準備      |
-| master  | リリース         |
-| hotfix  | バグ緊急対応      |
-| support | 旧バージョン保守  |
+| Branch    | Interpretation   |
+| :-------: | :--------------: |
+| develop   | 開発メイン       |
+| feature   | 新機能開発       |
+| release   | リリース準備     |
+| master    | リリース         |
+| hotfix    | バグ緊急対応     |
+| support   | 旧バージョン保守 |
 
 ## Main branches
 
