@@ -6,15 +6,17 @@ public class Main {
 
     String boo = "yeeeeees";
 
-    Map<String, String> map = new HashMap<String, String>();
-    map.put("true", "yeeeeees");
-    map.put("false", "nooooooo");
-    
-    if (boo.equals(map.get("true"))) {
-      System.out.println(map.get("true"));
-    } else {
-      System.out.println(map.get("false"));
-    }
+    Map<String, String> aMap = new HashMap<String, String>();
+    aMap.put("true", "yeeeeees");
+    aMap.put("false", "nooooooo");
+
+    Map<String, String> bMap = new HashMap<String, String>();
+    bMap.putAll(aMap);
+
+    System.out.println("-------- aMap");
+    System.out.println(aMap);
+    System.out.println("-------- bMap");
+    System.out.println(bMap);
 
   }
 
