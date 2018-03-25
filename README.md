@@ -5,6 +5,7 @@
   * [Commands](unix/commands.sh)
 
 ## Programming Language
+- [C](c)
 - [Java](java)
 - [Node.js](nodejs)
 - [Python](python)
