@@ -33,3 +33,22 @@ SELECT SEQUENCE_NAME.nextval from dual;
 -- 現在のセッションにて採番を行なってない場合には取得できずエラーとなる
 SELECT SEQUENCE_NAME.currval from dual;
 ```
+
+## MacにてSqlPlusを使えるようにしてみた
+
+macOSからsqlplusコマンドを利用したかった。  
+ORACLE公式より、下記2つをダウンロード。
+
+- instantclient-basic-macos.x64-12.2.0.1.0-2.zip
+- instantclient-sqlplus-macos.x64-12.2.0.1.0-2.zip
+
+`/usr/local/` に `oracle/` を作成して、そこに解凍したものを移動。  
+`.zshrc` に下記を記述。
+
+```zsh
+# oracle
+export ORACLE_HOME=/usr/local/oracle
+export PATH=$PATH:$ORACLE_HOME/instantclient_12_2
+```
+
+sqlplus コマンドが使用できるようになりました。
