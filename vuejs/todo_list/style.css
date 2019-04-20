@@ -1,0 +1,17 @@
+table {
+  border: 2px solid #BBBBBB;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #BBBBBB;
+  text-align: center;
+}
+thead tr td {
+  font-weight: bold;
+}
+.todo {
+  text-align: left;
+}
+.completeTasks {
+  background: #AAAAAA;
+}
