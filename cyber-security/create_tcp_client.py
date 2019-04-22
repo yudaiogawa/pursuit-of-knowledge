@@ -13,4 +13,4 @@ client.send(str)
 
 res = client.recv(4096)
 
-print res
+print(res)
