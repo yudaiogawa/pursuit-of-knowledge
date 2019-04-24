@@ -1,6 +1,9 @@
 # Gitflow
 
-[A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) の為のGitのプラグインツール
+## References
+
+- [nvie/gitflow](https://github.com/nvie/gitflow)
+- [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) の為のGitのプラグインツール
 
 ## Branch model
 
