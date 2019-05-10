@@ -3,7 +3,6 @@
 ## Operating System
 
 - [Unix](unix)
-  - [Commands](unix/commands.sh)
 
 ## Programming Language
 
@@ -31,8 +30,6 @@
 ## Version Control System
 
 - [Git](git)
-  - [Commands](git/commands.sh)
-  - [GitFlow](git/gitflow)
 
 ## [Apple Developer](apple-developer)
 
