@@ -25,8 +25,8 @@
 
 ## Infrastructure Technology
 
-- [Vagrant](infrastructure/vagrants)
-- [Docker](infrastructure/docker)
+- [Vagrant](vagrant)
+- [Docker](docker)
 
 ## Version Control System
 
