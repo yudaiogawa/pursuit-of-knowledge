@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ExtendsAndOverride",
+      "request": "launch",
+      "mainClass": "ExtendsAndOverride"
+    }
+  ]
+}
