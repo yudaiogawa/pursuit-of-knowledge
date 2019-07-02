@@ -1,1 +1,33 @@
+### https://raw.github.com/github/gitignore/38b189d3b9ea5a14f7177db78d13e2e1cc0e0092/Java.gitignore
+
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### https://raw.github.com/github/gitignore/38b189d3b9ea5a14f7177db78d13e2e1cc0e0092/Global/VisualStudioCode.gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
