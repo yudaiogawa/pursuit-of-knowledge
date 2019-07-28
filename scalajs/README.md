@@ -1,4 +1,4 @@
-# Scala.js :)
+# Scala.js ;)
 
 ## Environment
 
@@ -7,7 +7,7 @@
 [info] 0.13.16
 ```
 
-## How to run
+## Run
 
 ```zsh
 % sbt run
