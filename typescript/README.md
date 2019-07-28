@@ -1,4 +1,4 @@
-# Typescript :)
+# Typescript ;)
 
 ## Environment
 
@@ -7,16 +7,16 @@
 Version 2.5.3
 ```
 
-## How to run
+## Compile && Run
 
-1. Compiles to plain JavaScript
+Compiles to plain JavaScript
 
-  ```zsh
-  % tsc foo.ts
-  ```
+```zsh
+% tsc foo.ts
+```
 
-1. Run
+Run
 
-  ```zsh
-  % node foo.js
-  ```
+```zsh
+% node foo.js
+```

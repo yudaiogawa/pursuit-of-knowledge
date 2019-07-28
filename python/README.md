@@ -1,6 +1,6 @@
-# python :)
+# python ;)
 
-## environment
+## Environment
 
 - python2
 - python3

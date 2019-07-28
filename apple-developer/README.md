@@ -1,5 +1,1 @@
-# Apple Developer's knowledge
-
-## Developer's tools
-
-- Xcode
+# Apple Developer

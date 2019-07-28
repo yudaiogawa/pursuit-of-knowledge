@@ -1,14 +1,19 @@
-# Android
+# Android ;)
 
-## デバイスにapkをインストールする方法
+## How to install APK on Android device
 
-USB接続されているデバイスにapkをインストールする方法。  
-ADB (Android Debug Bridge) を使用。
+USB接続されている実機デバイスにapkをインストールする方法。
+
+`ADB(Android Debug Bridge)` を使用する。
+
+接続されているデバイスの確認
 
 ```zsh
-# 接続デバイスの確認
 % adb devices
+```
 
-# 接続デバイスに apk をインスコ
-% adb install [apk_file]
+接続デバイスに `apk` をインスコ
+
+```zsh
+% adb install [apk file]
 ```
