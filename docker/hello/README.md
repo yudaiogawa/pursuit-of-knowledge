@@ -14,7 +14,7 @@
 
 ```zsh
 # Run
-% docker container run -d -p 49152:8080 example/echo:latest
+% docker container run -d -p 49152:8080 --name example-echo example/echo:latest
 
 # Check
 % docker container ls
