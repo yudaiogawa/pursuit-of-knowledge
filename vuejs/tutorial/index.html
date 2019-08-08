@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Vue Application</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+  <div id="app">
+    <h1>{{ title }}</h1>
+    <h2>{{ msg }}</h2>
+  </div>
+
+  <!-- v-bind -->
+  <div id="app2">
+    <span v-bind:title="message">
+      Hover your mouse over me for a few seconds
+      to see my dynamically bound title!
+    </span>
+  </div>
+
+  <!-- v-if -->
+  <div id="app3">
+    <span v-if="seen">Now you see me.</span>
+  </div>
+
+  <!-- v-for -->
+  <div id="app4">
+    <ol>
+      <li v-for="actress in actresses">
+        <span style="color: teal">Name: </span>{{ actress.name }}
+        <span style="color: teal">Age: </span>{{ actress.age }}
+      </li>
+    </ol>
+  </div>
+
+  <!-- v-on -->
+  <div id="app5">
+    <p>{{ msg }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+    <p v-if="isReverse">Reversed text!!</p>
+  </div>
+
+  <!-- v-model -->
+  <div id="app6">
+    <p>{{ msg }}</p>
+    <input v-model="msg">
+  </div>
+
+  <!-- use component system -->
+  <div id="app7">
+    <ol>
+      <todo-item
+        v-for="item in fruits"
+        v-bind:todo="item"
+        v-bind:key="item.id"
+      ></todo-item>
+    </ol>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        title: 'Vueeeeeee!!',
+        msg: 'This is Vue.js.'
+      }
+    })
+
+    var app2 = new Vue({
+      el: '#app2',
+      data: {
+        message: 'You loaded this page on ' + new Date().toLocaleString()
+      }
+    })
+
+    var app3 = new Vue({
+      el: '#app3',
+      data: {
+        seen: true
+      }
+    })
+
+    var app4 = new Vue({
+      el: '#app4',
+      data: {
+        actresses: [
+          { name: 'Nana Komatsu', age: 23 },
+          { name: 'Kasumi Arimura', age: 26 },
+          { name: 'Suzu Hirose', age: 21 },
+          { name: 'Tao Tsuchiya', age: 24 },
+          { name: 'Mei Nagano', age: 19 }
+        ]
+      }
+    })
+
+    var app5 = new Vue({
+      el: '#app5',
+      data: {
+        msg: 'Vueeeeeee!!',
+        isReverse: false
+      },
+      methods: {
+        reverseMessage: function () {
+          this.msg = this.msg.split('').reverse().join('')
+          this.isReverse = !this.isReverse
+        }
+      }
+    })
+
+    var app6 = new Vue({
+      el: '#app6',
+      data: {
+        msg: 'Vueeeeeee!!'
+      }
+    })
+
+    Vue.component('todo-item', {
+      props: ['todo'],
+      template: '<li>{{ todo.text }}</li>'
+    })
+
+    var app7 = new Vue({
+      el: '#app7',
+      data: {
+        fruits: [
+          { id: 0, text: 'Apple' },
+          { id: 1, text: 'Orange' },
+          { id: 2, text: 'Pine' }
+        ]
+      }
+    })
+  </script>
+</body>
+</html>
