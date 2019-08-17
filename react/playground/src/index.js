@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+let siteMetaData = {
+  title: 'React Playground',
+  subTitle: 'Welcome React playground :)'
+};
+
 function FirstComponent() {
   return (
     <div>
-      <h1>Welcome React Playground :)</h1>
+      <h1>{ siteMetaData.title }</h1>
+      <h2>{ siteMetaData.subTitle }</h2>
       <img src="https://source.unsplash.com/random/400x200" />
     </div>
   )
