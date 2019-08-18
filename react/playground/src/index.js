@@ -14,12 +14,13 @@ const unescapeHtml = {
 };
 
 // Stateless-Component or Functional-Component
-function StatelessComponent() {
+function StatelessComponent(props) {
   return (
     <div>
       <h1>{ siteMetaData.title }</h1>
       <h2>{ siteMetaData.subTitle }</h2>
       <span dangerouslySetInnerHTML={ unescapeHtml } />
+      <p>{ props.message }</p>
       <img src="https://source.unsplash.com/random/400x200" />
     </div>
   )
@@ -37,7 +38,7 @@ class ClassComponent extends React.Component {
 }
 
 ReactDOM.render(
-  <ClassComponent />,
+  <StatelessComponent message='this is React playground' />,
   document.getElementById('root')
 );
 
