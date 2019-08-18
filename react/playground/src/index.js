@@ -9,11 +9,16 @@ let siteMetaData = {
   subTitle: 'Welcome React playground :)'
 };
 
+const unescapeHtml = {
+  __html: '<p>Unescape p tag in JSX.</p>'
+};
+
 function FirstComponent() {
   return (
     <div>
       <h1>{ siteMetaData.title }</h1>
       <h2>{ siteMetaData.subTitle }</h2>
+      <span dangerouslySetInnerHTML={ unescapeHtml } />
       <img src="https://source.unsplash.com/random/400x200" />
     </div>
   )
