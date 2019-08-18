@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.classComponent {
+  background-color: antiquewhite;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

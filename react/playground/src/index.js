@@ -13,7 +13,8 @@ const unescapeHtml = {
   __html: '<p>Unescape p tag in JSX.</p>'
 };
 
-function FirstComponent() {
+// Stateless-Component or Functional-Component
+function StatelessComponent() {
   return (
     <div>
       <h1>{ siteMetaData.title }</h1>
@@ -24,8 +25,19 @@ function FirstComponent() {
   )
 }
 
+// Class-Component
+class ClassComponent extends React.Component {
+  render() {
+    return (
+      <div className="classComponent">
+        <h1>Rendering Class Component</h1>
+      </div>
+    )
+  }
+}
+
 ReactDOM.render(
-  <FirstComponent />,
+  <ClassComponent />,
   document.getElementById('root')
 );
 
