@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import PropTypes from 'prop-types';
 
 let siteMetaData = {
   title: 'React Playground',
@@ -20,8 +21,8 @@ function StatelessComponent() {
       <h1>{ siteMetaData.title }</h1>
       <h2>{ siteMetaData.subTitle }</h2>
       <span dangerouslySetInnerHTML={ unescapeHtml } />
-      <Message message="First message." />
-      <Message message="Second message." />
+      <Message message="This is react playground page." />
+      <Message />
       <img src="https://source.unsplash.com/random/400x200" />
     </div>
   )
@@ -31,6 +32,16 @@ function Message(props) {
   return (
     <p>{ props.message }</p>
   )
+}
+
+// Type checking with propTypes.
+Message.propTypes = {
+  message: PropTypes.string.isRequired
+}
+
+// Default data of props.
+Message.defaultProps = {
+  message: '[WARNING] Not message has been passed.'
 }
 
 // Class-Component
