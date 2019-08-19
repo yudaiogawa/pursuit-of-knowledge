@@ -14,24 +14,49 @@ const unescapeHtml = {
   __html: '<p>Unescape p tag in JSX.</p>'
 };
 
-// Stateless-Component or Functional-Component
-function StatelessComponent() {
-  return (
-    <div>
-      <h1>{ siteMetaData.title }</h1>
-      <h2>{ siteMetaData.subTitle }</h2>
-      <span dangerouslySetInnerHTML={ unescapeHtml } />
-      <Message message="This is react playground page." />
-      <Message />
-      <img src="https://source.unsplash.com/random/400x200" />
-    </div>
-  )
+// Class-Component
+class HelloWorld extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h1>{ siteMetaData.title }</h1>
+        <h2>{ siteMetaData.subTitle }</h2>
+        <span dangerouslySetInnerHTML={ unescapeHtml } />
+        <Message />
+        <img src="https://source.unsplash.com/random/400x200" />
+      </div>
+    )
+  }
+
 }
 
-function Message(props) {
-  return (
-    <p>{ props.message }</p>
-  )
+class Message extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      message: 'The initial message :)'
+    };
+    this.updateMsg = this.updateMsg.bind(this)
+  }
+
+  updateMsg(event) {
+    console.log("[DEBUG] Called 'updateMsg' method.")
+    this.setState({
+      message: event.target.value
+    });
+  }
+
+  render() {
+    return (
+      <div className="divMsg">
+        <p>{this.state.message}</p>
+        <input type="text" onChange={this.updateMsg} />
+      </div>
+    )
+  }
+
 }
 
 // Type checking with propTypes.
@@ -44,19 +69,8 @@ Message.defaultProps = {
   message: '[WARNING] Not message has been passed.'
 }
 
-// Class-Component
-class ClassComponent extends React.Component {
-  render() {
-    return (
-      <div className="classComponent">
-        <h1>Rendering Class Component</h1>
-      </div>
-    )
-  }
-}
-
 ReactDOM.render(
-  <StatelessComponent />,
+  <HelloWorld />,
   document.getElementById('root')
 );
 

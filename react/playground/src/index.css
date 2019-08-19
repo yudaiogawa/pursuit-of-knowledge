@@ -12,9 +12,14 @@ code {
     monospace;
 }
 
-.classComponent {
+.divMsg {
   background-color: antiquewhite;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.divMsg input {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
