@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Test Api",
+      "text": "foobar"
+    },
+    {
+      "title": "Test Api 2",
+      "text": "foobar 2",
+      "id": 2
+    }
+  ]
+}
