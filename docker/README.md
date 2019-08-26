@@ -1,3 +1,3 @@
-# Docker
+# Docker ;)
 
-![Docker](docker.png "Docker Logo")
+![Docker](img/docker.png "Docker Logo")
