@@ -1,13 +1,5 @@
 # java ;)
 
-## Introduction
-
-```zsh
-% brew tap caskroom/versions
-% brew cask install java8
-% brew cask install java6
-```
-
 ## Environment
 
 ```zsh

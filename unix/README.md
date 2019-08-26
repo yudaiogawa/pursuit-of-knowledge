@@ -1,3 +1,3 @@
-# Unix
+# Unix ;)
 
-[Commands](commands.sh)
+- [Commands](commands.md)

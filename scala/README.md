@@ -1,11 +1,5 @@
 # Scala ;)
 
-## Introduction
-
-```zsh
-% brew install scala
-```
-
 ## Environment
 
 ```zsh

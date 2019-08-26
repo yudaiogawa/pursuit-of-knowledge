@@ -1,12 +1,10 @@
 # React ;)
 
-## App
-
-### playground
+## playground
 
 The playground for React.js.
 
-### test-api
+## test-api
 
 References
 

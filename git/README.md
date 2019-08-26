@@ -1,5 +1,5 @@
-# Git
+# Git ;)
 
-- [commands](./commands.sh)
+- [commands](./commands.md)
 - [gitflow](./gitflow.md)
 - [gitignore](./gitignore.md)
