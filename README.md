@@ -23,7 +23,7 @@
 
 ## Framework
 
-- [React.js](reactjs)
+- [React.js](react)
 - [Vue.js](vuejs)
 
 ## Database
