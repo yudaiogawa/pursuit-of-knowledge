@@ -1,10 +1,19 @@
-# Today I Learned
+<p align="center">
+  <img src="./_img/banner.png" width="100%">
+</p>
 
-## Operating System
+<h1 align="center">Today I Learned</h1>
+<p align="center">Happy Hacking :)<p>
+
+<br>
+
+### Operating System
 
 - [Unix](unix)
 
-## Programming Language
+<br>
+
+### Programming Language
 
 - [C](c)
 - [ECMAScript](ecmascript)
@@ -16,29 +25,41 @@
 - [Scala.js](scalajs)
 - [TypeScript](typescript)
 
-## Mobile App Development
+<br>
+
+### Mobile App Development
 
 - [Apple Developer](apple-developer)
 - [Android Developer](android-developer)
 
-## Framework
+<br>
+
+### Framework
 
 - [React.js](react)
 - [Vue.js](vuejs)
 
-## Database
+<br>
+
+### Database
 
 - [Oracle](oracle)
 
-## Infrastructure Technology
+<br>
+
+### Infrastructure Technology
 
 - [Docker](docker)
 
-## Version Control System
+<br>
+
+### Version Control System
 
 - [Git](git)
 
-## Useful Websites
+<br>
+
+### Useful Websites
 
 - [How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)
 - [dev.to](https://dev.to/)
@@ -47,3 +68,5 @@
 - [JPCERT - Secure Coding](https://www.jpcert.or.jp/securecoding/)
 - [IPA - ネットワークセキュリティ関連用語集](https://www.ipa.go.jp/security/ciadr/word_idx.html)
 - [AtCoder](https://atcoder.jp/)
+
+<br>
