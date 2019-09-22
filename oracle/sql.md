@@ -1,22 +1,27 @@
-# SQL
+<h1 align="center">SQLs</h1>
+<br>
 
-## Version
+### Version
 
-バージョン確認
+Check version
 
 ```sql
 SELECT * FROM V$VERSION
 ```
 
-## User
+<br>
 
-ユーザ一覧
+### User
+
+Users List
 
 ```sql
 SELECT * FROM DBA_USERS ORDER BY USERNAME;
 ```
 
-## Sequence
+<br>
+
+### Sequence
 
 DBに登録してある全てのシーケンス
 
