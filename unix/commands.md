@@ -1,6 +1,7 @@
-# Commands
+<h1 align="center">Commands</h1>
+<br>
 
-## Shebang
+### Shebang
 
 実行されたコマンドを表示。変数は展開されて表示される。
 
@@ -20,7 +21,9 @@
 #!/bin/bash -e
 ```
 
-## History
+<br>
+
+### History
 
 直前のコマンドに渡したパラメータを `!$` で呼び出せる
 
@@ -35,7 +38,9 @@ $ cd !$
 $ !foo:p
 ```
 
-## Network
+<br>
+
+### Network
 
 受信パケット内容を確認
 
@@ -43,7 +48,9 @@ $ !foo:p
 $ tcpdump src www.google.co.jp -X
 ```
 
-## Move
+<br>
+
+### Move
 
 findで検索したファイルを指定のディレクトリへ全て移動
 
@@ -51,7 +58,9 @@ findで検索したファイルを指定のディレクトリへ全て移動
 $ find . -type f -name '*foobar*' | xargs -t mv [target_directory]
 ```
 
-## 環境変数
+<br>
+
+### Environment Variables
 
 grep結果の色付け
 
