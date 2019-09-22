@@ -43,6 +43,14 @@ $ !foo:p
 $ tcpdump src www.google.co.jp -X
 ```
 
+## Move
+
+findで検索したファイルを指定のディレクトリへ全て移動
+
+```bash
+$ find . -type f -name '*foobar*' | xargs -t mv [target_directory]
+```
+
 ## 環境変数
 
 grep結果の色付け
