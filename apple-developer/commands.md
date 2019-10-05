@@ -2,7 +2,7 @@
 
 <br>
 
-#### xcode-select
+### xcode-select
 
 現在アクティブな `Developer Directory` の出力
 
@@ -20,7 +20,7 @@
 
 <br>
 
-#### security
+### security
 
 端末にインストールされている証明書の出力
 

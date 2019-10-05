@@ -2,7 +2,7 @@
 
 <br>
 
-#### How to install a API into Android device
+### How to install a API into Android device
 
 `ADB(Android Debug Bridge)` を使用。
 
