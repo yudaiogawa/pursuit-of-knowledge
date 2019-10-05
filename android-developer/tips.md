@@ -1,7 +1,8 @@
 # Tips
 
-<details>
-<summary>How to install a API into Android device</summary>
+<br>
+
+#### How to install a API into Android device
 
 `ADB(Android Debug Bridge)` を使用。
 
@@ -16,5 +17,3 @@ APKをインストール
 ```zsh
 % adb install [APK name]
 ```
-
-</details>
