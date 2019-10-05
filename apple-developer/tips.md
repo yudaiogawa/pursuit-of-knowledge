@@ -2,7 +2,7 @@
 
 <br>
 
-#### 新規デバイスのUUIDを追加したのにProvisioning Profileに反映されない...
+### 新規デバイスのUUIDを追加したのにProvisioning Profileに反映されない...
 
 キャッシュが悪さをしている可能性あり。下記手順を試す。
 
