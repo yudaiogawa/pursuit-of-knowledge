@@ -1,4 +1,5 @@
-# Oracle ;)
+<h1 align="center">ORACLE :)</h1>
+<br>
 
-- [SQL](sql.md)
+- [Words](words.md)
 - [Tips](tips.md)
