@@ -1,4 +1,5 @@
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class StringUtilTest {
 
@@ -18,14 +19,12 @@ public class StringUtilTest {
     System.out.println(methodName + ": Test1: " + bool);
 
     // Test2
-    charset = Charset.forName("Shift_Jis");
     str = StringUtil.truncateWithByte(charset, "abcdef,ghijklmn", 10);
     bool = str.equals(expected) ? true : false;
 
     System.out.println(methodName + ": Test2: " + bool);
 
     // Test3
-    charset = Charset.forName("Shift_Jis");
     str = StringUtil.truncateWithByte(charset, "abcdef,ghあijklmn", 10);
     expected = "abcdef,gh";
     bool = str.equals(expected) ? true : false;
@@ -33,12 +32,19 @@ public class StringUtilTest {
     System.out.println(methodName + ": Test3: " + bool);
 
     // Test4
-    charset = Charset.forName("Shift_Jis");
     str = StringUtil.truncateWithByte(charset, "abcdあef,ghiklmn", 10);
     expected = "abcdあef,g";
     bool = str.equals(expected) ? true : false;
 
     System.out.println(methodName + ": Test4: " + bool);
+
+    // Test5
+    charset = StandardCharsets.UTF_8;
+    str = StringUtil.truncateWithByte(charset, "abcdあef,ghiklmn", 10);
+    expected = "abcdあef,";
+    bool = str.equals(expected) ? true : false;
+
+    System.out.println(methodName + ": Test5: " + bool);
   }
 
   public static void truncateWithByteSjisTest() {
