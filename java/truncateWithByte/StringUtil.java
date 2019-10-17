@@ -16,6 +16,11 @@ public class StringUtil {
   public static String truncateWithByte(Charset charset, String str, int byteLength) {
     byte[] bytes = str.getBytes(charset);
 
+    int strByteLength = str.getBytes(charset).length;
+    if (strByteLength <= byteLength) {
+      return str;
+    }
+
     ByteBuffer byteBuf = ByteBuffer.wrap(bytes, 0, byteLength);
     CharBuffer charBuf = CharBuffer.allocate(byteLength);
 
