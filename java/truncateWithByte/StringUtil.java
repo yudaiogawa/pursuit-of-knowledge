@@ -36,16 +36,6 @@ public class StringUtil {
    */
   public static String truncateWithByteSjis(String str, int byteLength) {
     Charset charset = Charset.forName("Shift_JIS");
-    byte[] bytes = str.getBytes(charset);
-
-    ByteBuffer byteBuf = ByteBuffer.wrap(bytes, 0, byteLength);
-    CharBuffer charBuf = CharBuffer.allocate(byteLength);
-
-    CharsetDecoder decoder = charset.newDecoder();
-    decoder.onMalformedInput(CodingErrorAction.IGNORE);
-    decoder.decode(byteBuf, charBuf, true);
-    decoder.flush(charBuf);
-
-    return new String(charBuf.array(), 0, charBuf.position());
+    return truncateWithByte(charset, str, byteLength);
   }
 }
