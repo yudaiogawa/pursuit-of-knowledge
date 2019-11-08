@@ -21,9 +21,6 @@
 - [Node.js](nodejs)
 - [Python](python)
 - [Perl](perl)
-- [Scala](scala)
-- [Scala.js](scalajs)
-- [TypeScript](typescript)
 
 <br>
 
