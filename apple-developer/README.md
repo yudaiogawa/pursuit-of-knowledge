@@ -1,4 +1,4 @@
-# Apple Developer ;)
+# Apple Developer
 
 - [Commands](commands.md)
-- [Tips](tips.md)
+- [Tips](tips)
