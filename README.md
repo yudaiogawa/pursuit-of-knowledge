@@ -15,7 +15,6 @@
 
 ### Programming Language
 
-- [C](c)
 - [ECMAScript](ecmascript)
 - [Java](java)
 - [Node.js](nodejs)
