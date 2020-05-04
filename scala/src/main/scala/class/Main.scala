@@ -16,5 +16,8 @@ object Main {
     println(math.sub(10, 10))
     val sub100 = math.sub(100, _)
     println(sub100(50))
+
+    new ExtendsSmpA().print
+    new ExtendsSmpB().print
   }
 }
