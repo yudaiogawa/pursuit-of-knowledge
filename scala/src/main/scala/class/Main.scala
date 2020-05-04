@@ -19,5 +19,11 @@ object Main {
 
     new ExtendsSmpA().print
     new ExtendsSmpB().print
+
+    // Test02
+    var shape: Shape = new Rectangle(10.0, 20.0)
+    println(shape.area)
+    shape = new Circle(2.0)
+    println(shape.area)
   }
 }
