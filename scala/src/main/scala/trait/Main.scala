@@ -1,4 +1,5 @@
 object Main {
+
   def main(args: Array[String]): Unit = {
     // val a = new TraitA // this is compile error
     val a = new ClassA
@@ -25,5 +26,9 @@ object Main {
     println()
     println("(new Class05).greet()")
     (new Class05).greet()
+    println()
+
+    (new Class06).printBar()
+    (new Class07).printBar()
   }
 }
