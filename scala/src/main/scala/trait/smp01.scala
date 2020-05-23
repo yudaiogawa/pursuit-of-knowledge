@@ -8,8 +8,8 @@ class ClassA extends TraitA {
 class ClassB
 class ClassC extends ClassA with TraitA with TraitB
 
-// To compile error because ClassB is not trait.
 // class ClassD extends ClassA with ClassB
+//   -> To compile error because ClassB is not trait.
 
-// The trait cannot take parameters.
 // trait TraitC(foo: String)
+//   -> The trait cannot take parameters.

@@ -1,4 +1,4 @@
-// 線形化(linearization)
+// linearization
 
 trait Trait04 {
   def greet(): Unit
