@@ -1,3 +1,0 @@
-# Unix ;)
-
-- [Commands](commands.md)
