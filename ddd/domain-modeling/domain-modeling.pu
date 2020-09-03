@@ -1,0 +1,42 @@
+@startuml domain-modeling
+
+left to right direction
+skinparam dpi 200
+
+rectangle リクエスト集約 {
+  object Request {
+    リクエストID
+    タイトル
+    内容
+    ステータス
+    重要度
+    担当ユーザーID
+    メモ
+  }
+}
+
+object Comment {
+  コメントID
+  親コメントID
+  ユーザーID
+  リクエストID
+}
+
+rectangle ユーザー集約 {
+  object User {
+    ユーザーID
+    ユーザー名
+    権限ID
+  }
+}
+
+object Authority {
+  権限ID
+  権限名
+}
+
+Request "1..*" *-- "1" User
+Request "1" --* "0..*" Comment
+User "1" --* "1..*" Authority
+
+@enduml
