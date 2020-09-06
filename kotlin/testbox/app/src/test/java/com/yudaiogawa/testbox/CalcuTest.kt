@@ -3,7 +3,7 @@ package com.yudaiogawa.testbox
 import org.junit.Test
 import org.assertj.core.api.Assertions.*
 
-internal class CalculatorTest {
+internal class CalcTest {
 
     private val sut = Calc()
 
@@ -33,5 +33,10 @@ internal class CalculatorTest {
         val act: Double = sut.divide(3, 2)
         val exp = 1.5
         assertThat(act).isEqualTo(exp)
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun divide03() {
+        sut.divide(0, 0)
     }
 }
