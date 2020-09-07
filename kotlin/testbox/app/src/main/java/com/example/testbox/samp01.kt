@@ -1,4 +1,4 @@
-package com.yudaiogawa.testbox
+package com.example.testbox
 
 import java.lang.IllegalArgumentException
 

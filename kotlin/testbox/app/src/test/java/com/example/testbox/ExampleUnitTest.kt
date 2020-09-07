@@ -1,4 +1,4 @@
-package com.yudaiogawa.testbox
+package com.example.testbox
 
 import org.junit.Test
 
