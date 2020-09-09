@@ -1,13 +1,14 @@
 package com.example.testbox
 
 import org.junit.Test
+import org.junit.Before
 import org.assertj.core.api.Assertions.*
 import org.junit.Assert.assertThat
 import org.hamcrest.CoreMatchers.*
 
 internal class CalcTest {
 
-    private val sut = Calc()
+    private lateinit var sut: Calc
 
     @Test
     fun times() {
@@ -40,5 +41,10 @@ internal class CalcTest {
     @Test(expected = IllegalArgumentException::class)
     fun divide03() {
         sut.divide(0, 0)
+    }
+
+    @Before
+    fun setup() {
+        this.sut = Calc()
     }
 }
