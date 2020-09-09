@@ -2,6 +2,8 @@ package com.example.testbox
 
 import org.junit.Test
 import org.assertj.core.api.Assertions.*
+import org.junit.Assert.assertThat
+import org.hamcrest.CoreMatchers.*
 
 internal class CalcTest {
 
@@ -18,7 +20,7 @@ internal class CalcTest {
     fun times02() {
         val act: Int = sut.times(0, 3)
         val exp = 0
-        assertThat(act).isEqualTo(exp)
+        assertThat(act, `is`(exp))
     }
 
     @Test
