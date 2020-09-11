@@ -1,0 +1,16 @@
+@startuml class-diagram
+
+abstract class AbstractClass <<abstract>> {
+  {abstract} method1()
+  {abstract} method2()
+  templateMethod()
+}
+
+class ConcreteClass {
+  method1()
+  method2()
+}
+
+AbstractClass <|-- ConcreteClass
+
+@enduml
