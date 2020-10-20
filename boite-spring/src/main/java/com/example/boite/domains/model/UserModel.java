@@ -1,4 +1,4 @@
-package com.example.boite;
+package com.example.boite.domains.model;
 
 import javax.validation.constraints.NotEmpty;
 

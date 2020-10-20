@@ -1,6 +1,6 @@
 package com.example.boite.interfaces.controller;
 
-import com.example.boite.UserModel;
+import com.example.boite.domains.model.UserModel;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
