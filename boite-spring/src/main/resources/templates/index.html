@@ -6,9 +6,10 @@
 </head>
 <body>
 <h1>FOOBAR</h1>
-<form method="POST" action="rslt.html" th:action="@{rslt}">
-  <p>Please input User ID.</p>
-  <input type="text" name="userId">
+<form method="POST" action="rslt.html" th:action="@{rslt}" th:object="${userModel}">
+  <p>Please enter your userID here :)</p>
+  <input type="text" name="userId" th:field="${userModel.userId}">
+  <p class="error" th:errors="${userModel.userId}">Type your UserID here ;(</p>
   <input type="submit" value="Send">
 </form>
 </body>

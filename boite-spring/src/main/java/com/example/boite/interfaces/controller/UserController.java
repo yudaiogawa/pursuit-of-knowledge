@@ -1,22 +1,33 @@
 package com.example.boite.interfaces.controller;
 
+import com.example.boite.UserModel;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class UserController {
 
-    @RequestMapping("/input")
+    @ModelAttribute
+    public UserModel setUpModel() {
+        return new UserModel();
+    }
+
+    @RequestMapping({"/", "/input"})
     public String index() {
         return "index.html";
     }
 
     @RequestMapping("/rslt")
-    public String result(@RequestParam("userId") String userId, Model model) {
+    public String result(@Validated UserModel userModel, BindingResult bindingResult, Model model) {
+
+        if (bindingResult.hasErrors()) return "index.html";
+
         String userName = "Alice";
-        model.addAttribute("userId", userId);
+        model.addAttribute("userId", userModel.getUserId());
         model.addAttribute("userName", userName);
         return "rslt.html";
     }
