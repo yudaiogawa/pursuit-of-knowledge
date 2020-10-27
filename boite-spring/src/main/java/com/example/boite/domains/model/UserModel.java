@@ -1,18 +1,11 @@
 package com.example.boite.domains.model;
 
 import javax.validation.constraints.NotEmpty;
+import lombok.Data;
 
-// FIXME: use lombok
+@Data
 public class UserModel {
 
     @NotEmpty(message = "Type your UserID here ;(")
     private String userId;
-
-    public String getUserId() {
-        return this.userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 }
