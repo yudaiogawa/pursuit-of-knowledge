@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# ASGI - Asynchronous Server Gateway Interface
+
+ASGI_APPLICATION = 'boite_django.routing.application'
