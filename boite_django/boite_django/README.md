@@ -1,5 +1,11 @@
 # Boite Django
 
+## Run Application
+
+```shell
+% python manage.py runserver
+```
+
 ## Rules
 
 #### Define the secret key
