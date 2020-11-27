@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>TALK SESSION</h1>
+
+<label for="sess-input">Name</label>
+<input id="sess-input" type="text" size="64">
+<input id="sess-submit" type="submit" value="start session">
+
+
+<script>
+  document.querySelector('#sess-input').focus();
+  document.querySelector('#sess-input').onkeyup = function (e) {
+    if (e.keyCode === 13) document.querySelector('#sess-input').click(); {#  13 = Enter Key Code  #}
+  }
+
+  document.querySelector('#sess-submit').onclick = function (e) {
+    let sessionName = document.querySelector('#sess-input').value();
+    window.location.pathname = '/sess/' + sessionName + '/';
+  }
+</script>
+</body>
+</html>
