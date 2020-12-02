@@ -3,7 +3,7 @@
 ## Run Application
 
 ```shell
-% python manage.py runserver
+% make run
 ```
 
 ## Rules
