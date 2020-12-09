@@ -5,13 +5,11 @@
   <title>Title</title>
 </head>
 <body>
-<h1>TALK SESSION</h1>
-
-<label for="sess-input">Name</label>
-<input id="sess-input" type="text" size="64">
-<input id="sess-submit" type="submit" value="start session">
-
-
+  <h1>TALK SESSION</h1>
+  <label for="sess-input">Name</label>
+  <input id="sess-input" type="text" size="64">
+  <input id="sess-submit" type="submit" value="start session">
+</body>
 <script>
   const SESS_INPUT = document.querySelector('#sess-input');
   const SESS_SUBMIT = document.querySelector('#sess-submit');
@@ -26,5 +24,4 @@
     if (e.keyCode === 13) SESS_SUBMIT.click(); // 13 = Enter Key Code
   }
 </script>
-</body>
 </html>

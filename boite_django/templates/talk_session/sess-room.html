@@ -5,13 +5,11 @@
   <title>SESS ROOM</title>
 </head>
 <body>
-
-<textarea id="sess-area" cols="64" rows="24"></textarea><br>
-<input id="msg-input" type="text" size="64">
-<input id="msg-submit" type="submit" value="Send">
-{{ sess_name|json_script:'sess-name' }}
-
-
+  <textarea id="sess-area" cols="64" rows="24"></textarea><br>
+  <input id="msg-input" type="text" size="64">
+  <input id="msg-submit" type="submit" value="Send">
+  {{ sess_name|json_script:'sess-name' }}
+</body>
 <script>
   const ROOM_NAME = JSON.parse(document.getElementById('sess-name').textContent);
   const WEB_SOCKET = new WebSocket('ws://' + window.location.host + '/sess/' + ROOM_NAME + '/');
@@ -38,5 +36,4 @@
     if (e.keyCode === 13) MSG_SUBMIT.click();
   }
 </script>
-</body>
 </html>
