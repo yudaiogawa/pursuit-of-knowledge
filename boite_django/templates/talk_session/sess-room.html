@@ -17,18 +17,19 @@
   const MSG_SUBMIT = document.querySelector('#msg-submit');
 
   WEB_SOCKET.onclose = function (e) {
-    console.error('ERROR: ' + e.code)
+    console.error('ERROR: websocket closed unexpectedly.')
   }
 
   WEB_SOCKET.onmessage = function (e) {
-    const DATA = JSON.parse(e.data);
-    document.querySelector('#sess-area').value().add(DATA.message + '\n');
+    const NEW_LINE = '\n';
+    const MSG = JSON.parse(e.data).message.concat(NEW_LINE);
+    document.querySelector('#sess-area').value += MSG;
   }
 
   MSG_SUBMIT.onclick = function (e) {
     const MSG = MSG_INPUT.value;
     WEB_SOCKET.send(JSON.stringify({ 'message': MSG }));
-    MSG_INPUT.value = null;
+    MSG_INPUT.value = '';
   }
 
   MSG_INPUT.focus();
